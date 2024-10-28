@@ -292,7 +292,7 @@ footer a {
   h2 {
     font-size: 2.5rem;
   }
-
+  /* TABELLA */
   caption {
     font-weight: normal;
   }
@@ -301,6 +301,8 @@ footer a {
     width: 70%;
     margin-bottom: 10rem;
   }
+
+  /* section */
 
   iframe {
     display: inline-block;
@@ -329,5 +331,16 @@ footer a {
   section form button {
     width: 20%;
     line-height: 30px;
+  }
+
+  /* ASIDE */
+  aside h2 {
+    font-size: 4rem;
+    font-weight: normal;
+  }
+  aside div {
+    margin: -1px;
+    width: 33%;
+    display: inline-block;
   }
 }
