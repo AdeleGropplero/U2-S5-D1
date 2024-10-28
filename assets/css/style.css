@@ -58,6 +58,74 @@ header nav li a::before {
   content: "\22c6\0020";
 }
 
+@media screen and (min-width: 1200px) {
+  /*   header {
+    display: inline-block;
+  }
+
+  header div img {
+    display: inline-block;
+    text-align: left;
+  }
+  header div p {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+  }
+
+  header nav {
+    width: 20%;
+    display: inline-block;
+    margin-top: 20px;
+    vertical-align: top;
+  } */
+
+  /* HEADER */
+  header {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+  }
+
+  header div img {
+    width: 20%;
+    margin: 0;
+    padding: 3px;
+    text-align: left;
+  }
+
+  header div {
+    text-align: left;
+    width: 70%;
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  header div p {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+
+  header nav {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    margin-top: 20px;
+    text-align: right;
+  }
+
+  header nav ul li a {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+
+  /* MAIN */
+}
 /* MAIN */
 main {
   background-color: #fff;
@@ -171,6 +239,7 @@ tbody tr:last-of-type {
     text-align: center;
   }
 }
+
 /* FORM */
 input {
   padding: 5px;
