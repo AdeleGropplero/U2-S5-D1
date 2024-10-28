@@ -4,11 +4,13 @@ html {
 }
 body {
   font-family: Poppins, "Helvetica Neue", sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.5;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2;
   padding: 15px;
   background-image: url("../img/sfondo.png");
   background-position: center center;
+  letter-spacing: 0.4px;
 }
 * {
   box-sizing: border-box;
@@ -58,74 +60,6 @@ header nav li a::before {
   content: "\22c6\0020";
 }
 
-@media screen and (min-width: 1200px) {
-  /*   header {
-    display: inline-block;
-  }
-
-  header div img {
-    display: inline-block;
-    text-align: left;
-  }
-  header div p {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 20px;
-  }
-
-  header nav {
-    width: 20%;
-    display: inline-block;
-    margin-top: 20px;
-    vertical-align: top;
-  } */
-
-  /* HEADER */
-  header {
-    width: 100%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 10px;
-  }
-
-  header div img {
-    width: 20%;
-    margin: 0;
-    padding: 3px;
-    text-align: left;
-  }
-
-  header div {
-    text-align: left;
-    width: 70%;
-    display: inline-block;
-    margin-left: 20px;
-  }
-
-  header div p {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 20px;
-    margin-left: 25px;
-    font-weight: 500;
-    font-size: 1.8rem;
-  }
-
-  header nav {
-    display: inline-block;
-    width: 25%;
-    vertical-align: top;
-    margin-top: 20px;
-    text-align: right;
-  }
-
-  header nav ul li a {
-    font-weight: 500;
-    font-size: 1.8rem;
-  }
-
-  /* MAIN */
-}
 /* MAIN */
 main {
   background-color: #fff;
@@ -173,7 +107,6 @@ blockquote {
 }
 h1 + p {
   color: #a0a0a0;
-  font-weight: 300;
 }
 ul,
 ol {
@@ -181,11 +114,11 @@ ol {
 }
 a {
   color: #00a0c6;
-  font-weight: bold;
+  font-weight: normal;
 }
 strong {
   color: #a02571;
-  font-weight: bold;
+  font-weight: normal;
 }
 code {
   background-color: #e3e3e3;
@@ -291,4 +224,110 @@ footer {
 }
 footer a {
   color: fuchsia;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    margin-inline: 100px;
+    font-size: 2rem;
+  }
+
+  /* HEADER */
+  header {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+  }
+
+  header div img {
+    width: 20%;
+    margin: 0;
+    padding: 3px;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  header div {
+    text-align: left;
+    width: 76%;
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: center;
+  }
+
+  header div p {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+
+  header nav {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    margin-top: 20px;
+    text-align: right;
+  }
+
+  header nav ul li a {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+
+  /* MAIN */
+
+  main {
+    padding-inline: 35px;
+  }
+
+  h1 {
+    font-size: 6.5rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  caption {
+    font-weight: normal;
+  }
+
+  article table {
+    width: 70%;
+    margin-bottom: 10rem;
+  }
+
+  iframe {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    height: 263px;
+  }
+
+  section {
+    display: inline-block;
+    width: 49%;
+    border-radius: 20px;
+  }
+
+  section h2 {
+    background-color: #a8a8a8;
+    font-weight: normal;
+    font-size: 25px;
+  }
+
+  section form input {
+    width: 70%;
+    line-height: 30px;
+  }
+
+  section form button {
+    width: 20%;
+    line-height: 30px;
+  }
 }
