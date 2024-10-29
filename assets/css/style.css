@@ -344,3 +344,34 @@ footer a {
     display: inline-block;
   }
 }
+
+@media print {
+  body {
+    font-size: 28px;
+    padding: 0;
+    background-image: none;
+  }
+
+  header,
+  article section,
+  iframe,
+  aside,
+  footer {
+    display: none;
+  }
+}
+
+main {
+  box-shadow: none;
+  margin: 0;
+}
+
+thead tr {
+  background-color: #d3d3d3;
+  color: black;
+}
+
+thead tr,
+tbody tr {
+  border-bottom: 1px solid #666;
+}
